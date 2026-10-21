@@ -1,0 +1,111 @@
+{
+ "box": [
+  [
+   -170.0,
+   -6.0,
+   -170.0
+  ],
+  [
+   170.0,
+   60.0,
+   230.0
+  ]
+ ],
+ "stride": 10,
+ "kinds": {
+  "surface": 0,
+  "edge": 1,
+  "glass": 2,
+  "ground": 3,
+  "gedge": 4,
+  "crown": 5,
+  "prop": 6,
+  "light": 7,
+  "trunk": 8
+ },
+ "layers": {
+  "bld": {
+   "files": [
+    "bld-a.bin",
+    "bld-b.bin"
+   ],
+   "counts": [
+    431394,
+    1006586
+   ],
+   "kinds": {
+    "surface": 275369,
+    "edge": 1095328,
+    "glass": 67283
+   },
+   "aStart": [
+    238521,
+    556711
+   ]
+  },
+  "ground": {
+   "files": [
+    "ground-a.bin",
+    "ground-b.bin"
+   ],
+   "counts": [
+    118789,
+    277177
+   ],
+   "kinds": {
+    "ground": 97638,
+    "gedge": 298328
+   },
+   "aStart": [
+    118789,
+    277177
+   ]
+  },
+  "trees": {
+   "files": [
+    "trees-a.bin",
+    "trees-b.bin"
+   ],
+   "counts": [
+    85141,
+    198665
+   ],
+   "kinds": {
+    "crown": 269324,
+    "trunk": 14482
+   },
+   "aStart": [
+    85141,
+    198665
+   ]
+  },
+  "props": {
+   "files": [
+    "props-a.bin",
+    "props-b.bin"
+   ],
+   "counts": [
+    1937,
+    4522
+   ],
+   "kinds": {
+    "prop": 6340,
+    "light": 119
+   },
+   "aStart": [
+    1937,
+    4522
+   ]
+  }
+ },
+ "shells": {
+  "file": "shells.bin",
+  "verts": 29178,
+  "indices": 206952
+ },
+ "order": "radial",
+ "center": [
+  8.0,
+  -6.0
+ ]
+}
