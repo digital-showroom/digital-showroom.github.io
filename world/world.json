@@ -30,17 +30,15 @@
     "bld-b.bin"
    ],
    "counts": [
-    431394,
-    1006586
+    152341,
+    355463
    ],
    "kinds": {
-    "surface": 275369,
-    "edge": 1095328,
-    "glass": 67283
+    "edge": 507804
    },
    "aStart": [
-    238521,
-    556711
+    89113,
+    207937
    ]
   },
   "ground": {
@@ -49,16 +47,15 @@
     "ground-b.bin"
    ],
    "counts": [
-    118789,
-    277177
+    48049,
+    112117
    ],
    "kinds": {
-    "ground": 97638,
-    "gedge": 298328
+    "gedge": 160166
    },
    "aStart": [
-    118789,
-    277177
+    48049,
+    112117
    ]
   },
   "trees": {
@@ -67,36 +64,35 @@
     "trees-b.bin"
    ],
    "counts": [
-    85141,
-    198665
+    72731,
+    169708
    ],
    "kinds": {
-    "crown": 269324,
-    "trunk": 14482
+    "crown": 242439
    },
    "aStart": [
-    85141,
-    198665
-   ]
-  },
-  "props": {
-   "files": [
-    "props-a.bin",
-    "props-b.bin"
-   ],
-   "counts": [
-    1937,
-    4522
-   ],
-   "kinds": {
-    "prop": 6340,
-    "light": 119
-   },
-   "aStart": [
-    1937,
-    4522
+    72731,
+    169708
    ]
   }
+ },
+ "bake": {
+  "bld": {
+   "surface_pts_m2": 0,
+   "edge_step_cm": 36,
+   "glass_pts_m2": 0
+  },
+  "ground": {
+   "surface_pts_m2": 0,
+   "edge_step_cm": 42,
+   "raised_edge_step_cm": 100
+  },
+  "trees": {
+   "crown_share": 0.9,
+   "trunk_share": 0
+  },
+  "props_share": 0,
+  "point_size": 2.5
  },
  "shells": {
   "file": "shells.bin",
