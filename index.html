@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Цифровой шоурум для продаж недвижимости — Данис Зиякаев</title>
-  <meta name="description" content="Цифровой шоурум для продаж недвижимости: квартал, двор и квартиры в 3D на вашей модели — для офиса продаж, тач-стола, сайта и выставки. Запуск за 4–6 недель.">
+  <meta name="description" content="Цифровой шоурум для продаж недвижимости: квартал, двор и квартиры в 3D на вашей модели — для офиса продаж, тач-стола, сайта и выставки. Начинаем с пилота на одном доме.">
   <link rel="canonical" href="https://digital-showroom.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
@@ -22,10 +22,11 @@
   <meta name="twitter:image" content="https://digital-showroom.github.io/og/showroom.jpg">
   <meta name="theme-color" content="#ece9e3">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <!-- paper until the styles arrive (in dev they come with the JS): no unstyled page with blue links -->
-  <style>html{background:#ece9e3}body{visibility:hidden}</style>
-  <script type="module" crossorigin src="./assets/index-DgkS8URD.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-gIGfstK6.css">
+  <!-- paper until the styles arrive (in dev they come with the JS): no unstyled page with blue links. Transitions
+       are off until main.js has seen a styled frame: else links ease from blue and every route panel fades out -->
+  <style id="boot">html{background:#ece9e3}body{visibility:hidden}*,:before,:after{transition:none!important}</style>
+  <script type="module" crossorigin src="./assets/index-CluNq71a.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cj9HA-S0.css">
 </head>
 <body>
   <div class="stage" id="stage">
@@ -37,7 +38,7 @@
     <div class="copy" id="copy">
       <div class="blk hero" data-a="0" data-b="0.018">
         <h1>Цифровой шоурум <br>для&nbsp;продаж вашего проекта</h1>
-        <p class="sub">Квартал, двор и&nbsp;квартиры в&nbsp;3D&nbsp;— для офиса продаж, <span class="nw">тач-стола</span> и&nbsp;сайта. Запуск за&nbsp;<span class="nw">4–6&nbsp;недель</span>.</p>
+        <p class="sub">Квартал, двор и&nbsp;квартиры в&nbsp;3D&nbsp;— для офиса продаж, <span class="nw">тач-стола</span> и&nbsp;сайта.</p>
         <p class="go"><span class="go-scroll">Листайте, чтобы пройти по&nbsp;шоуруму</span><button type="button" class="go-rec" data-rec="0"><i class="tri"></i>Запись · 1:24</button></p>
       </div>
 
@@ -51,11 +52,6 @@
         <p class="eyebrow">Вопрос покупателя · 02</p>
         <h2>Каким будет квартал?</h2>
         <p>Дома встают из&nbsp;3D-модели архитектора&nbsp;— той, что уже есть. Стройка не&nbsp;началась, а&nbsp;квартал можно облететь.</p>
-      </div>
-      <div class="blk caption" data-a="0.265" data-b="0.34">
-        <p class="eyebrow">Это уже шоурум</p>
-        <h2>Та&nbsp;же модель в&nbsp;цвете и&nbsp;свете</h2>
-        <p>Так квартал видит покупатель на&nbsp;тач-столе и&nbsp;на&nbsp;сайте.</p>
       </div>
       <div class="blk side" data-a="0.355" data-b="0.43">
         <p class="eyebrow">Двор</p>
@@ -82,7 +78,7 @@
           <p class="v">2 спальни · 84,7&nbsp;м²</p>
           <p class="m">Окна во&nbsp;двор · 22,1&nbsp;млн&nbsp;₽ · <span class="free">свободна</span></p>
         </div>
-        <p class="sub">Цены и&nbsp;статусы приходят из&nbsp;Profitbase, MacroCRM или Excel.</p>
+        <p class="sub">Цены и&nbsp;статусы&nbsp;— из&nbsp;вашей таблицы, подключение к&nbsp;Profitbase или MacroCRM&nbsp;— под проект.</p>
         <button type="button" class="proof" data-rec="48"><span class="proof-screen"><img src="media/day/v3-t48.webp" alt="Планировка квартиры с мебелью в шоуруме" width="960" height="540"></span><span class="proof-cap">Квартира в&nbsp;шоуруме · <b>0:48</b></span></button>
       </div>
       <div class="blk caption" data-a="0.715" data-b="0.772">
@@ -102,7 +98,7 @@
         <a class="btn solid" href="#talk" data-talk>Обсудить такой проект</a>
       </div>
       <div class="blk sheet" data-a="0.905" data-b="1.01">
-        <h2>Из&nbsp;вашей модели&nbsp;— шоурум за&nbsp;4–6&nbsp;недель</h2>
+        <h2>Шоурум на&nbsp;вашей модели</h2>
         <p class="sub">Покажу шоурум вживую за&nbsp;20&nbsp;минут и&nbsp;прикинем, как он&nbsp;ляжет на&nbsp;ваш проект.</p>
         <div class="btns"><a class="btn solid" href="#talk" data-talk>Обсудить ваш проект</a><a class="btn" href="#video">Ниже: запись, цена, запуск</a></div>
       </div>
@@ -124,13 +120,14 @@
     <section class="video wrap" id="video" aria-labelledby="video-h">
       <header class="sec-head reveal">
         <p class="eyebrow">Запись шоурума</p>
-        <h2 id="video-h">Весь проход по&nbsp;«Ольхе» за&nbsp;1:24</h2>
+        <h2 id="video-h">Весь шоурум «Ольха» за&nbsp;1:24</h2>
         <p class="lead">Локация, двор, выбор квартиры, прогулка. Запись экрана без монтажа. Вживую покажу на&nbsp;разговоре.</p>
       </header>
       <figure class="player reveal">
-        <video id="player" controls playsinline preload="none" poster="media/day/v3-t26.webp" width="1280" height="720">
+        <video id="player" playsinline preload="none" poster="media/day/v3-t26.webp" width="1280" height="720">
           <source src="media/olkha-v3.mp4" type="video/mp4">
         </video>
+        <button type="button" class="player-go" id="player-go" aria-label="Смотреть запись шоурума, 1:24"><i class="tri"></i></button>
       </figure>
       <div class="chaps reveal" id="player-chaps"></div>
     </section>
@@ -146,7 +143,7 @@
           <h3>Продажи до&nbsp;стройки</h3>
           <dl>
             <div><dt>Есть</dt><dd>Модель проекта&nbsp;— своя или от&nbsp;CG-студии.</dd></div>
-            <div><dt>Получаете</dt><dd>Шоурум для офиса продаж, тач-стола и&nbsp;сайта. Цены и&nbsp;статусы из&nbsp;вашей CRM.</dd></div>
+            <div><dt>Получаете</dt><dd>Шоурум для офиса продаж, тач-стола и&nbsp;сайта. Цены и&nbsp;статусы из&nbsp;ваших данных.</dd></div>
           </dl>
           <a class="link-arrow" href="#talk" data-talk data-role="Застройщик">Обсудить проект</a>
         </article>
@@ -175,7 +172,7 @@
       <header class="sec-head reveal">
         <p class="eyebrow">Где работает</p>
         <h2 id="where-h">Одна модель и&nbsp;одни данные для всех экранов</h2>
-        <p class="lead">Шоурум собирается один раз. Цены и&nbsp;статусы квартир на&nbsp;всех экранах приходят из&nbsp;одной CRM.</p>
+        <p class="lead">Шоурум собирается один раз. Цены и&nbsp;статусы квартир на&nbsp;всех экранах берутся из&nbsp;одного источника.</p>
       </header>
       <ul class="devices reveal">
         <li class="device">
@@ -216,14 +213,14 @@
       </header>
       <ol class="steps reveal">
         <li><span class="steps-n">01</span><b>20&nbsp;минут</b><p>Показ шоурума по&nbsp;видеосвязи. Обсуждаем ваш проект.</p></li>
-        <li><span class="steps-n">02</span><b>Материалы</b><p>Вы присылаете 3D-модель, планировки квартир и&nbsp;брендбук проекта.</p></li>
-        <li><span class="steps-n">03</span><b>4–6&nbsp;недель</b><p>Собираю шоурум на&nbsp;вашем проекте.</p></li>
-        <li><span class="steps-n">04</span><b>Запуск</b><p>Офис продаж, сайт, выставка. Цены и&nbsp;статусы обновляются из&nbsp;CRM.</p></li>
+        <li><span class="steps-n">02</span><b>Оценка</b><p>Смотрю, что уже есть: модель от&nbsp;архитектора или CG-студии, планировки, брендбук. Называю срок и&nbsp;цену.</p></li>
+        <li><span class="steps-n">03</span><b>Пилот</b><p>Один дом или очередь на&nbsp;экране в&nbsp;офисе продаж: видно, как шоурум работает на&nbsp;вашем проекте.</p></li>
+        <li><span class="steps-n">04</span><b>Дальше</b><p>Остальные дома, <span class="nw">тач-стол</span>, сайт, стенд&nbsp;— если пилот подошёл.</p></li>
       </ol>
       <div class="price reveal">
         <p class="price-num">от&nbsp;250&nbsp;тыс.&nbsp;₽</p>
-        <p class="price-what">пилот: один дом или очередь, шоурум для экрана в&nbsp;офисе продаж</p>
-        <p class="price-note">Тач-стол, сайт и&nbsp;стенд считаю отдельно&nbsp;— зависит от&nbsp;проекта и&nbsp;оборудования.</p>
+        <p class="price-what">пилот: один дом или очередь, экран в&nbsp;офисе продаж</p>
+        <p class="price-note">Точную цену и&nbsp;срок называю после оценки. Стоимость пилота засчитывается в&nbsp;полный проект.</p>
       </div>
     </section>
 
