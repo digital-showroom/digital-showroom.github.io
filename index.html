@@ -22,8 +22,8 @@
   <meta name="twitter:image" content="https://digital-showroom.github.io/og/showroom.jpg">
   <meta name="theme-color" content="#ece9e3">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script type="module" crossorigin src="./assets/index-BISIcRFJ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DmnXhxFj.css">
+  <script type="module" crossorigin src="./assets/index-BlMqapUg.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CbxUwE5i.css">
 </head>
 <body>
   <div class="stage" id="stage">
@@ -56,9 +56,14 @@
         <p>Так квартал видит покупатель на&nbsp;тач-столе и&nbsp;на&nbsp;сайте.</p>
       </div>
       <div class="blk side" data-a="0.355" data-b="0.43">
-        <p class="eyebrow">Вопрос покупателя · 03</p>
-        <h2>Где будут гулять дети?</h2>
-        <p class="sub">Каждое место двора подписано и&nbsp;показано в&nbsp;масштабе. Двор продаёт до&nbsp;благоустройства.</p>
+        <p class="eyebrow">Двор</p>
+        <h2>Благоустройство продаёт до&nbsp;стройки</h2>
+        <p class="sub">Двора ещё нет, а&nbsp;покупатель уже видит его по&nbsp;местам: где детям, где спорт, где отдых.</p>
+        <div class="pills cats" role="group" aria-label="Места двора по разделам">
+          <button type="button" data-cat="kids">Детям</button>
+          <button type="button" data-cat="sport">Спорт</button>
+          <button type="button" data-cat="rest">Отдых</button>
+        </div>
         <button type="button" class="proof" data-rec="26"><span class="proof-screen"><img src="media/day/v3-t26.webp" alt="Экран «Благоустройство» в шоуруме" width="960" height="540"></span><span class="proof-cap">Так этот экран выглядит в&nbsp;шоуруме · <b>0:26</b></span></button>
       </div>
       <div class="blk caption with-proof" data-a="0.445" data-b="0.57">
@@ -220,50 +225,20 @@
       </div>
     </section>
 
-    <section class="talk wrap" id="talk" aria-labelledby="talk-h">
-      <div class="talk-text reveal">
-        <p class="eyebrow">Разговор · 20 минут</p>
-        <h2 id="talk-h">Обсудим ваш проект</h2>
-        <p class="lead">По&nbsp;видеосвязи покажу шоурум вживую: выберем квартиру, посмотрим двор и&nbsp;солнце. Потом прикинем, как он&nbsp;ляжет на&nbsp;ваш проект: материалы, сроки, цена.</p>
-        <p class="talk-contacts">Данис Зиякаев<br><a href="https://t.me/danis_zi" target="_blank" rel="noopener">Telegram @danis_zi</a> · <a href="tel:+79646100331">+7&nbsp;964&nbsp;610-03-31</a><br><a href="mailto:ziakaev.danis@gmail.com">ziakaev.danis@gmail.com</a></p>
+    <section class="call wrap" id="talk" aria-labelledby="talk-h">
+      <div class="call-text reveal">
+        <p class="eyebrow">Показ · 20 минут</p>
+        <h2 id="talk-h">Покажу шоурум вживую</h2>
+        <p class="lead">По&nbsp;видеосвязи выберем квартиру, посмотрим двор и&nbsp;солнце. Потом прикинем, как шоурум ляжет на&nbsp;ваш проект: материалы, сроки, цена.</p>
       </div>
-      <form class="brief reveal" id="brief" novalidate>
-        <fieldset>
-          <legend>Вы</legend>
-          <div class="pills" data-field="role">
-            <button type="button" data-v="Застройщик">Застройщик</button>
-            <button type="button" data-v="Архбюро">Архбюро</button>
-            <button type="button" data-v="Мастерская или студия">Мастерская или студия</button>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Проект</legend>
-          <div class="pills" data-field="kind">
-            <button type="button" data-v="Квартал">Квартал</button>
-            <button type="button" data-v="Башни">Башни</button>
-            <button type="button" data-v="Посёлок">Посёлок</button>
-            <button type="button" data-v="Другое">Другое</button>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Что уже есть</legend>
-          <div class="pills" data-field="have">
-            <button type="button" data-v="3D-модель">3D-модель</button>
-            <button type="button" data-v="Физический макет">Физический макет</button>
-            <button type="button" data-v="Рендеры">Рендеры</button>
-            <button type="button" data-v="Пока концепция">Пока концепция</button>
-          </div>
-        </fieldset>
-        <label class="field"><span>О&nbsp;проекте</span><textarea id="brief-note" maxlength="300" rows="2" placeholder="Город, сколько домов, когда старт продаж"></textarea></label>
-        <div class="send">
-          <a class="btn" id="send-tg" href="https://t.me/danis_zi" target="_blank" rel="noopener">Отправить в&nbsp;Telegram</a>
-          <a class="btn btn-ghost" id="send-mail" href="mailto:ziakaev.danis@gmail.com">Письмом</a>
-          <button type="button" class="btn btn-ghost" id="copy-message">Скопировать сообщение</button>
-        </div>
-        <p class="send-note" id="send-long" role="status" hidden>Сообщение длинное — скопируйте его и вставьте в чат</p>
-        <label class="field" id="copy-fallback" hidden><span>Текст сообщения</span><textarea id="brief-copy" rows="7" readonly></textarea></label>
-        <p class="send-note">Откроется Telegram или почта с&nbsp;готовым сообщением&nbsp;— останется нажать «Отправить».</p>
-      </form>
+      <div class="call-act reveal">
+        <a class="btn call-tg" id="send-tg" href="https://t.me/danis_zi" target="_blank" rel="noopener">Написать в&nbsp;Telegram</a>
+        <dl class="call-list">
+          <div><dt>Telegram</dt><dd><a href="https://t.me/danis_zi" target="_blank" rel="noopener">@danis_zi</a></dd></div>
+          <div><dt>Телефон</dt><dd><a href="tel:+79646100331">+7&nbsp;964&nbsp;610-03-31</a></dd></div>
+          <div><dt>Почта</dt><dd><a id="send-mail" href="mailto:ziakaev.danis@gmail.com">ziakaev.danis@gmail.com</a></dd></div>
+        </dl>
+      </div>
     </section>
 
     <footer class="foot wrap">
