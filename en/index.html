@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Digital Showroom for Real Estate Sales — Danis Ziakaev</title>
+  <meta name="description" content="A digital showroom for real estate sales: the area, the yard and the apartments in 3D on your own model — for the sales office, a touch table, the website and exhibitions. We start with a pilot on one building.">
+  <link rel="canonical" href="https://digital-showroom.github.io/en/">
+  <link rel="alternate" hreflang="ru" href="https://digital-showroom.github.io/">
+  <link rel="alternate" hreflang="en" href="https://digital-showroom.github.io/en/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Danis Ziakaev — Digital Showrooms">
+  <meta property="og:title" content="Digital Showroom for Real Estate Sales — Danis Ziakaev">
+  <meta property="og:description" content="The area, the yard and the apartments in 3D on your model. For the sales office, a touch table and the website. See the «Olkha» demo.">
+  <meta property="og:url" content="https://digital-showroom.github.io/en/">
+  <meta property="og:image" content="https://digital-showroom.github.io/og/showroom.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The «Olkha» demo quarter in the Digital Showroom">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digital Showroom for Real Estate Sales — Danis Ziakaev">
+  <meta name="twitter:description" content="The area, the yard and the apartments in 3D on your model. For the sales office, a touch table and the website. See the «Olkha» demo.">
+  <meta name="twitter:image" content="https://digital-showroom.github.io/og/showroom.jpg">
+  <meta name="theme-color" content="#ece9e3">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <!-- paper until the styles arrive (in dev they come with the JS): no unstyled page with blue links. Transitions
+       are off until main.js has seen a styled frame: else links ease from blue and every route panel fades out -->
+  <style id="boot">html{background:#ece9e3}body{visibility:hidden}*,:before,:after{transition:none!important}</style>
+  <script type="module" crossorigin src="/assets/main-Dh-o5DVJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DMuZg2FS.css">
+</head>
+<body>
+  <div class="stage" id="stage">
+    <canvas id="world" aria-label="A flight over the «Olkha» demo quarter: the plot, the buildings, the yard, an apartment, other project types"></canvas>
+    <svg class="vec" id="vec" aria-hidden="true"></svg>
+    <div class="labels" id="labels" aria-hidden="true"></div>
+    <div class="axis" id="axis" aria-hidden="true"><i></i></div>
+    <span class="lot-dot" id="lot-dot" aria-hidden="true"></span>
+    <div class="copy" id="copy">
+      <div class="blk hero" data-a="0" data-b="0.018">
+        <h1>Digital Showroom <br>for selling your project</h1>
+        <p class="sub">The area, the yard and the apartments in&nbsp;3D&nbsp;— for the sales office, a touch table and the website.</p>
+        <p class="go"><span class="go-scroll">Scroll: what the showroom does, step by step</span><button type="button" class="go-rec" data-rec="0"><i class="tri"></i>The showroom itself&nbsp;— 1:24 recording</button></p>
+      </div>
+
+      <div class="blk caption with-proof" data-a="0.06" data-b="0.135">
+        <p class="eyebrow">Buyer's question · 01</p>
+        <h2>What's near home?</h2>
+        <p>In the showroom the buyer starts with the area: the plot and everything within a&nbsp;5, 10 and 15-minute walk.</p>
+        <button type="button" class="proof" data-rec="8"><span class="proof-screen"><img src="../media/day/v3-t8.webp" alt="The Location screen in the showroom" width="960" height="540"></span><span class="proof-cap">The area in the showroom · <b>0:08</b></span></button>
+      </div>
+      <div class="blk caption with-proof" data-a="0.15" data-b="0.25">
+        <p class="eyebrow">Buyer's question · 02</p>
+        <h2>What will the quarter be like?</h2>
+        <p>The showroom is built from the architect's 3D model&nbsp;— the one that already exists. Construction hasn't started, yet the buyer already flies over the quarter.</p>
+        <button type="button" class="proof" data-rec="24"><span class="proof-screen"><img src="../media/day/v3-t24.webp" alt="The quarter in the showroom" width="960" height="540"></span><span class="proof-cap">The quarter in the showroom · <b>0:24</b></span></button>
+      </div>
+      <div class="blk side" data-a="0.355" data-b="0.43">
+        <p class="eyebrow">Yard</p>
+        <h2>Landscaping sells before construction</h2>
+        <p class="sub">The yard doesn't exist yet, but in the showroom the buyer already sees it place by place: for kids, for sport, for rest.</p>
+        <div class="pills cats" role="group" aria-label="Yard places by type">
+          <button type="button" data-cat="kids">Kids</button>
+          <button type="button" data-cat="sport">Sport</button>
+          <button type="button" data-cat="rest">Rest</button>
+        </div>
+        <button type="button" class="proof" data-rec="26"><span class="proof-screen"><img src="../media/day/v3-t26.webp" alt="The Yard screen in the showroom" width="960" height="540"></span><span class="proof-cap">This screen in the showroom · <b>0:26</b></span></button>
+      </div>
+      <div class="blk caption with-proof" data-a="0.445" data-b="0.57">
+        <p class="eyebrow">Buyer's question · 04</p>
+        <h2>Which apartment is mine?</h2>
+        <p>In the showroom, available apartments show on the facade, and the building can be cut at any floor to see the plans.</p>
+        <button type="button" class="proof" data-rec="41"><span class="proof-screen"><img src="../media/day/v3-t41.webp" alt="Choosing on the facade in the showroom" width="960" height="540"></span><span class="proof-cap">Choosing on the facade in the showroom · <b>0:41</b></span></button>
+      </div>
+      <div class="blk side" data-a="0.625" data-b="0.71">
+        <p class="eyebrow">Buyer's question · 05</p>
+        <h2>Where do the windows face?</h2>
+        <div class="card">
+          <p class="k">Card in the showroom · Building&nbsp;1 · Floor&nbsp;4 · Apt&nbsp;35</p>
+          <p class="v">2 bedrooms · 84.7&nbsp;m²</p>
+          <p class="m">Windows to the yard · 22.1M&nbsp;₽ · <span class="free">available</span></p>
+          <p class="legend"><i class="sw free"></i><span>available</span><i class="sw sold"></i><span>sold</span></p>
+        </div>
+        <p class="sub">Prices and availability come from your spreadsheet; the link to your CRM is set up per project.</p>
+        <button type="button" class="proof" data-rec="48"><span class="proof-screen"><img src="../media/day/v3-t48.webp" alt="The apartment plan with furniture in the showroom" width="960" height="540"></span><span class="proof-cap">The apartment in the showroom · <b>0:48</b></span></button>
+      </div>
+      <div class="blk caption" data-a="0.715" data-b="0.772">
+        <p class="eyebrow">«Olkha»&nbsp;— a demo project</p>
+        <h2>The showroom is built on your project</h2>
+        <p>The same showroom screens&nbsp;— area, yard, apartment choice&nbsp;— on your model, with your apartments and in your project's style: logo, colours, fonts.</p>
+      </div>
+      <div class="blk pick" data-a="0.772" data-b="0.875" id="pick">
+        <p class="eyebrow">06 · Your project</p>
+        <h2 id="pick-h">What kind of project is it?</h2>
+        <div class="pills" role="group" aria-label="Project type">
+          <button type="button" data-kind="towers">Towers</button>
+          <button type="button" data-kind="village">Village</button>
+          <button type="button" data-kind="quarter">Quarter</button>
+        </div>
+        <p class="pick-line" id="pick-line"></p>
+        <a class="btn solid" href="#talk" data-talk>Discuss a project like this</a>
+      </div>
+      <div class="blk sheet" data-a="0.905" data-b="1.01">
+        <h2>A showroom on your model</h2>
+        <p class="sub">I'll show the showroom live in 20&nbsp;minutes, and we'll see how it fits your project.</p>
+        <div class="btns"><a class="btn solid" href="#talk" data-talk>Discuss your project</a><a class="btn" href="#video">Below: recording, how it's built, launch</a></div>
+      </div>
+    </div>
+    <p class="drag" id="drag">← drag to turn →</p>
+    <span class="cue" id="cue" aria-hidden="true"><i></i></span>
+    <div class="load" id="load"><i></i></div>
+  </div>
+  <header class="top">
+    <a class="brand" href="#" id="brand"><b>Danis Ziakaev</b><span>digital showrooms</span></a>
+    <nav class="chapters" id="chapters" aria-label="Chapters"></nav>
+    <div class="top-acts">
+      <a class="lang" href="../" lang="ru" hreflang="ru">RU</a>
+      <a class="pill solid" href="#talk" data-talk>Live demo · 20&nbsp;min</a>
+    </div>
+  </header>
+  <div class="track" id="track"></div>
+
+  <main class="tail" id="tail">
+    <section class="video wrap" id="video" aria-labelledby="video-h">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Showroom recording</p>
+        <h2 id="video-h">The whole «Olkha» showroom in&nbsp;1:24</h2>
+        <p class="lead">Location, yard, apartment choice, walk. A screen recording, no editing. I'll show it live on a call.</p>
+      </header>
+      <figure class="player reveal">
+        <video id="player" playsinline preload="none" poster="../media/day/v3-t26.webp" width="1280" height="720">
+          <source src="../media/olkha-v3.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="player-go" id="player-go" aria-label="Watch the showroom recording, 1:24"><i class="tri"></i></button>
+      </figure>
+      <div class="chaps reveal" id="player-chaps"></div>
+    </section>
+
+    <section class="who wrap" id="who" aria-labelledby="who-h">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Who it's for</p>
+        <h2 id="who-h">What each side gets</h2>
+      </header>
+      <div class="who-grid reveal">
+        <article class="who-card">
+          <p class="eyebrow">Developer</p>
+          <h3>Sales before construction</h3>
+          <dl>
+            <div><dt>Have</dt><dd>The project model&nbsp;— your own or from a CG studio.</dd></div>
+            <div><dt>Get</dt><dd>A showroom for the sales office, a touch table and the website. Prices and statuses from your data.</dd></div>
+          </dl>
+          <a class="link-arrow" href="#talk" data-talk data-role="Developer">Discuss a project</a>
+        </article>
+        <article class="who-card">
+          <p class="eyebrow">Architecture studio</p>
+          <h3>A project you can step into</h3>
+          <dl>
+            <div><dt>Have</dt><dd>The project model.</dd></div>
+            <div><dt>Get</dt><dd>A showroom to defend the concept with the client. Later it works in sales.</dd></div>
+          </dl>
+          <a class="link-arrow" href="#talk" data-talk data-role="Architecture studio">Discuss a project</a>
+        </article>
+        <article class="who-card">
+          <p class="eyebrow">Model workshop, agency, CG studio</p>
+          <h3>A showroom under your brand</h3>
+          <dl>
+            <div><dt>Have</dt><dd>Developer clients, physical models, project websites or renders.</dd></div>
+            <div><dt>Get</dt><dd>A showroom you sell together with your model or website.</dd></div>
+          </dl>
+          <a class="link-arrow" href="#talk" data-talk data-role="Model workshop or studio">Discuss a partnership</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="where wrap" id="where" aria-labelledby="where-h">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Where it runs</p>
+        <h2 id="where-h">One model and one data source for every screen</h2>
+        <p class="lead">The showroom is built once. Apartment prices and statuses on every screen come from one source.</p>
+      </header>
+      <ul class="devices reveal">
+        <li class="device">
+          <div class="dev-art"><div class="monitor">
+            <div class="dev-screen"><img src="../media/day/v3-t41.webp" alt="" loading="lazy" width="960" height="540"><video muted playsinline loop preload="none" data-src="media/loops/flat" data-start="0"></video></div>
+            <i class="monitor-neck"></i><i class="monitor-foot"></i>
+          </div></div>
+          <p class="dev-name">Sales office screen</p>
+        </li>
+        <li class="device">
+          <div class="dev-art"><div class="table">
+            <div class="dev-screen"><img src="../media/day/v3-t26.webp" alt="" loading="lazy" width="960" height="540"><video muted playsinline loop preload="none" data-src="media/loops/yard" data-start="0.5"></video></div>
+            <i class="table-edge"></i><i class="table-legs"></i>
+          </div></div>
+          <p class="dev-name">Touch table</p>
+          <p class="dev-note">Touch control is set up for your table or screen.</p>
+        </li>
+        <li class="device">
+          <div class="dev-art"><div class="phone">
+            <div class="dev-screen"><img src="../media/day/v3-t48.webp" alt="" loading="lazy" width="960" height="540"><video muted playsinline loop preload="none" data-src="media/loops/flat" data-start="5"></video></div>
+          </div></div>
+          <p class="dev-name">Project website</p>
+          <p class="dev-note">The web version is built per project: a lighter model that opens in the browser, phones included.</p>
+        </li>
+        <li class="device">
+          <div class="dev-art"><div class="booth">
+            <div class="booth-wall"><div class="dev-screen"><img src="../media/day/v3-t74.webp" alt="" loading="lazy" width="960" height="540"><video muted playsinline loop preload="none" data-src="media/loops/walk" data-start="1"></video></div></div>
+            <i class="booth-desk"></i>
+          </div></div>
+          <p class="dev-name">Exhibition stand</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrap" id="how" aria-labelledby="how-h">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Under the hood</p>
+        <h2 id="how-h">How it's built</h2>
+        <p class="lead">A real-time application, not a set of renders.</p>
+      </header>
+      <ol class="steps reveal">
+        <li><span class="steps-n">01</span><b>Unreal Engine 5, C++.</b><p>The whole app — camera, interface, data — is written in code, so one build runs on a monitor, a touch table or a stand.</p></li>
+        <li><span class="steps-n">02</span><b>One continuous camera.</b><p>From the city map to the yard, into an apartment and down to a walk: every transition is one camera move, never a cut.</p></li>
+        <li><span class="steps-n">03</span><b>Data in, showroom out.</b><p>Buildings, apartments, prices and statuses are imported from the project's model and tables, so a new project is rebuilt, not redrawn.</p></li>
+        <li><span class="steps-n">04</span><b>Baked analysis.</b><p>Walking times around the plot and sunlight in every apartment are computed offline from the model.</p></li>
+        <li><span class="steps-n">05</span><b>The web from the same scene.</b><p>The 3D on this page is captured from the same Unreal scene as Gaussian splats and point clouds and runs in the browser.</p></li>
+      </ol>
+    </section>
+
+    <section class="launch wrap" id="launch" aria-labelledby="launch-h">
+      <header class="sec-head reveal">
+        <p class="eyebrow">Launch</p>
+        <h2 id="launch-h">From a call to a showroom</h2>
+      </header>
+      <ol class="steps reveal">
+        <li><span class="steps-n">01</span><b>20&nbsp;minutes</b><p>An online call with screen sharing. We talk about your project.</p></li>
+        <li><span class="steps-n">02</span><b>Assessment</b><p>I look at what you already have: the model from the architect or a CG studio, plans, brand book. I name the timeline and the price.</p></li>
+        <li><span class="steps-n">03</span><b>Pilot</b><p>One building or one phase on the sales office screen: you see how the showroom works on your project.</p></li>
+        <li><span class="steps-n">04</span><b>Next</b><p>The other buildings, a touch table, the website, a stand&nbsp;— if the pilot works for you.</p></li>
+      </ol>
+      <div class="price reveal">
+        <p class="price-num">Pilot</p>
+        <p class="price-what">one building or phase, a sales office screen</p>
+        <p class="price-note">I name the price and timeline after looking at the materials. The pilot cost counts toward the full project.</p>
+      </div>
+    </section>
+
+    <section class="call wrap" id="talk" aria-labelledby="talk-h">
+      <div class="call-text reveal">
+        <p class="eyebrow">Live demo · 20 minutes</p>
+        <h2 id="talk-h">I'll show you the showroom live</h2>
+        <p class="lead">A 20-minute online call with screen sharing. I'll show how the showroom works, and we'll see how it fits your project.</p>
+      </div>
+      <div class="call-act reveal">
+        <a class="btn call-tg" data-send="mail" href="mailto:ziakaev.danis@gmail.com?subject=Digital%20Showroom%20for%20our%20project&amp;body=Hello%20Danis%2C%20I%27d%20like%20to%20discuss%20a%20digital%20showroom%20for%20our%20project.">Email me</a>
+        <dl class="call-list">
+          <div><dt>Email</dt><dd><a data-send="mail" href="mailto:ziakaev.danis@gmail.com">ziakaev.danis@gmail.com</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/danis-zi/" target="_blank" rel="noopener">linkedin.com/in/danis-zi</a></dd></div>
+          <div><dt>Telegram</dt><dd><a data-send="tg" href="https://t.me/danis_zi" target="_blank" rel="noopener">@danis_zi</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <footer class="foot wrap">
+      <p>«Olkha» is a demo quarter, a fictional project. Apartments, prices and statuses are illustrative.</p>
+      <p>© 2026 Danis Ziakaev</p>
+    </footer>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+      <div class="modal-head">
+        <b id="modal-h">Showroom recording · «Olkha» · 1:24</b>
+        <span>a screen recording, no editing</span>
+        <button type="button" class="modal-x" id="modal-x">Close</button>
+      </div>
+      <div class="modal-player"><video id="modal-video" controls playsinline preload="none" poster="../media/day/v3-t26.webp"></video></div>
+      <div class="chaps" id="modal-chaps"></div>
+      <div class="modal-foot"><span>Want one for your project?</span><a class="btn solid" href="#talk" data-talk>Discuss your project</a></div>
+    </div>
+  </div>
+
+  <!-- every «Обсудить» opens the contacts over the page: the visitor stays where they were on the route -->
+  <div class="modal" id="talk-pop" hidden>
+    <div class="modal-box talk-box" role="dialog" aria-modal="true" aria-labelledby="talk-pop-h">
+      <div class="modal-head">
+        <p class="eyebrow">Live demo · 20 minutes</p>
+        <button type="button" class="modal-x" id="talk-x">Close</button>
+      </div>
+      <h2 id="talk-pop-h">I'll show you the showroom live</h2>
+      <p class="talk-lead">A 20-minute online call with screen sharing. I'll show how the showroom works, and we'll see how it fits your project.</p>
+      <a class="btn solid call-tg" data-send="mail" href="mailto:ziakaev.danis@gmail.com?subject=Digital%20Showroom%20for%20our%20project&amp;body=Hello%20Danis%2C%20I%27d%20like%20to%20discuss%20a%20digital%20showroom%20for%20our%20project.">Email me</a>
+      <dl class="call-list">
+          <div><dt>Email</dt><dd><a data-send="mail" href="mailto:ziakaev.danis@gmail.com">ziakaev.danis@gmail.com</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/danis-zi/" target="_blank" rel="noopener">linkedin.com/in/danis-zi</a></dd></div>
+          <div><dt>Telegram</dt><dd><a data-send="tg" href="https://t.me/danis_zi" target="_blank" rel="noopener">@danis_zi</a></dd></div>
+        </dl>
+    </div>
+  </div>
+</body>
+</html>
