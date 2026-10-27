@@ -1,4 +1,4 @@
-import{t as e}from"./main-Dvr-pVVl.js";import{Z as t,at as n,ot as r,v as i}from"./three.module-xdFANKNJ.js";import{dyno as a}from"./spark.module-d_JCslet.js";var o={rx:150,rz:98,soft:.32},s=`
+import{t as e}from"./main-RjSSHovm.js";import{Z as t,at as n,ot as r,v as i}from"./three.module-xdFANKNJ.js";import{dyno as a}from"./spark.module-d_JCslet.js";var o={rx:150,rz:98,soft:.32},s=`
   float rt_hash(vec3 p){ p = fract(p*0.1031); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y)*p.z); }
   // 0 before the front has reached p, 1 once a full width behind it
   float lockK(vec3 p, float h, vec4 lock){
